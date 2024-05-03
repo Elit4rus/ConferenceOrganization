@@ -34,6 +34,7 @@ namespace ConferenceOrganization.View.Windows
             if (count==5)
             {
                 BlockSystemHelper.timer.Stop();
+                DialogResult = true;
                 Close();
             }
         }

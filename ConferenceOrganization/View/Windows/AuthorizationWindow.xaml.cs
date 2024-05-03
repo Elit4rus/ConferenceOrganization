@@ -37,8 +37,12 @@ namespace ConferenceOrganization.View.Windows
             {
                 if (BlockSystemHelper.IncreaseIncorrectInput()==3)
                 {
+
                     BlockWindow blockWindow = new BlockWindow();
-                    blockWindow.Show();
+                    if (blockWindow.ShowDialog()==true)
+                    {
+                        BlockSystemHelper.incorrectInput = 0;
+                    }
                 }
                 else
                 {
