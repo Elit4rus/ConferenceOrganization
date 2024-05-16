@@ -32,8 +32,8 @@
             <!-- Кнопка -->
             <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
-        <TextBlock Grid.Column="2" Text="Доброе утро/день/вечер!" FontSize="26"/>
-        <TextBlock Grid.Row="1" Grid.Column="2" Text="Ms/Mrs Имя" FontSize="26"/>
+        <TextBlock Name="HelloTbl" Grid.Column="2" Text="Доброе утро/день/вечер!" FontSize="26"/>
+        <TextBlock Name="NameTbl" Grid.Row="1" Grid.Column="2" Text="Ms/Mrs Имя" FontSize="26"/>
         <Button Grid.Column="2" Grid.Row="3" Content="Мероприятия" FontSize="26"/>
         <Button Grid.Column="2" Grid.Row="5" Content="Участники" FontSize="26"/>
         <Button Grid.Column="2" Grid.Row="7" Content="Жюри" FontSize="26"/>

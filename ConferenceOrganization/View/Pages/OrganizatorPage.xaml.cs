@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ConferenceOrganization.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +21,11 @@ namespace ConferenceOrganization.View.Pages
     /// </summary>
     public partial class OrganizatorPage : Page
     {
+
         public OrganizatorPage()
         {
             InitializeComponent();
+            HelloTbl.Text = 
         }
     }
 }

@@ -23,12 +23,14 @@ namespace ConferenceOrganization.View.Windows
         public AuthorizationWindow()
         {
             InitializeComponent();
+            LoadUserData();
         }
 
         private void LoginBtn_Click(object sender, RoutedEventArgs e)
         {
             if (AutorizationHelper.CheckData(LoginTb.Text, PasswordPb.Password) == true)
             {
+                SaveUserData();
                 // успешная авторизация
                 MessageBox.Show("Пользователь успешно авторизован");
                 Close();
