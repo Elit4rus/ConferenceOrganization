@@ -62,9 +62,11 @@ namespace ConferenceOrganization.View.Windows
             else
             {
                 // Очистка данных
-                Properties.Settings.Default.LoginValue = string.Empty;
-                Properties.Settings.Default.PasswordValue = string.Empty;
+                Properties.Settings.Default.LoginValue = string.Empty; // => ""
+                Properties.Settings.Default.PasswordValue = string.Empty; // => ""
             }
+            // Фиксируем изменения
+            Properties.Settings.Default.Save();
         }
     }
 }
