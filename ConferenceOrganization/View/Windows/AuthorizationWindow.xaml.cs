@@ -68,5 +68,10 @@ namespace ConferenceOrganization.View.Windows
             // Фиксируем изменения
             Properties.Settings.Default.Save();
         }
+        private void LoadUserData()
+        {
+            LoginTb.Text = Properties.Settings.Default.LoginValue ;
+            PasswordPb.Password = Properties.Settings.Default.PasswordValue;
+        }
     }
 }
