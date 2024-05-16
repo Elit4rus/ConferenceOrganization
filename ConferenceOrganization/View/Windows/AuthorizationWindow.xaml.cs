@@ -51,5 +51,20 @@ namespace ConferenceOrganization.View.Windows
                 }
             }
         }
+        private void SaveUserData()
+        {
+            if (RememberMeCb.IsChecked == true)
+            {
+                // Сохранение данных
+                Properties.Settings.Default.LoginValue = LoginTb.Text;
+                Properties.Settings.Default.PasswordValue = PasswordPb.Password;
+            }
+            else
+            {
+                // Очистка данных
+                Properties.Settings.Default.LoginValue = string.Empty;
+                Properties.Settings.Default.PasswordValue = string.Empty;
+            }
+        }
     }
 }
