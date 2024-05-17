@@ -9,34 +9,34 @@
       Title="Окно организатора">
     <Grid Margin="20" Background="white">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="290"/>
-            <ColumnDefinition Width="100"/>
-            <ColumnDefinition Width="500"/>
+            <ColumnDefinition Width="430"/>
             <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="400"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="430"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <!-- TextBlock1 -->
             <RowDefinition Height="auto"/>
-            <!-- TextBlock2 -->
-            <RowDefinition Height="auto"/>
             <!-- Отступ -->
-            <RowDefinition Height="20"/>
+            <RowDefinition Height="30"/>
             <!-- Кнопка -->
             <RowDefinition Height="1*"/>
             <!-- Отступ -->
-            <RowDefinition Height="20"/>
+            <RowDefinition Height="30"/>
             <!-- Кнопка -->
             <RowDefinition Height="1*"/>
             <!-- Отступ -->
-            <RowDefinition Height="20"/>
+            <RowDefinition Height="30"/>
             <!-- Кнопка -->
             <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
-        <TextBlock Name="HelloTbl" Grid.Column="2" Text="Доброе утро/день/вечер!" FontSize="26"/>
-        <TextBlock Name="NameTbl" Grid.Row="1" Grid.Column="2" Text="Ms/Mrs Имя" FontSize="26"/>
-        <Button Grid.Column="2" Grid.Row="3" Content="Мероприятия" FontSize="26"/>
-        <Button Grid.Column="2" Grid.Row="5" Content="Участники" FontSize="26"/>
-        <Button Grid.Column="2" Grid.Row="7" Content="Жюри" FontSize="26"/>
+        <TextBlock Name="GreetingTbl" Grid.Column="2" FontSize="30" HorizontalAlignment="Center"
+                   TextAlignment="Center"/>
+        
+        <Button Name="EventBtn" Grid.Column="2" Grid.Row="2" Content="Мероприятия" FontSize="26"/>
+        <Button Grid.Column="2" Grid.Row="4" Content="Участники" FontSize="26"/>
+        <Button Grid.Column="2" Grid.Row="6" Content="Жюри" FontSize="26"/>
         <Button Grid.Row="7" Content="Мой профиль" FontSize="26"/>
         <Image Grid.Row="3" Grid.RowSpan="3"/>
     </Grid>
